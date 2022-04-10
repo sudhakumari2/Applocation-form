@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title> javascript-task </title>
+  </head>
+  <body onload="init()">
+    <header class="header-top">
+      <h1 class='student-form'> student creater form</h1>
+    </header>
+  
+    <div class='container'>
+      <aside class="left-side">
+        <div>
+          <fieldset>
+            <label for="firstname">student name</label>
+            <input
+              type="text"
+              id="student name"
+              placeholder="Enter Student name">
+          </fieldset>
+          <fieldset>
+            <label for="subject">Subject</label>
+            <input
+              type="text"
+              id="subject"
+              placeholder="Enter Subject">
+          </fieldset>
+          <fieldset>
+            <label for="roll no">Roll no</label>
+            <input
+              type="rollno"
+              id="rollno"
+              placeholder=" Enter Roll no">
+          </fieldset>
+          <fieldset>
+            <label for="storage">storage type</label>
+          <select name="storage" id="storage">
+            <option value="Local">Local Storage</option>
+            <option value="Session">Session Storage</option>
+            <option value="Cookies">Cookies Storage</option>
+          </select>
+          <fieldset>
+            <button class="submit" id="submit" onclick="onsubmitPressed()">submit</button>
+            <button class="clear" id="clear" onclick="onclearPressed()">clear</button>
+          </fieldset>
+          
+          
+        </div>
+        <!-- <h2 class='student-details'> student-information</h2>
+      <div class='Div-2'>
+        <tr>
+          <td>roll no </td>
+          <td> student name </td>
+          <td> subject </td>
+          <td> storage type </td>
+        </tr> -->
+    <!-- </div> -->
+    <aside class="right-side">
+      <table id='registration-table'>
+        <thead>
+          <tr>
+            <th>student name</th>
+            <th>subject</th>
+            <th>roll no</th>
+            <th>storage type</th>
+            <!-- <th>Action</th> -->
+          </tr>
+
+        </thead>
+      </table>
+    </aside>
+    <script src="script.js"></script>
+  </body>
+</html>
